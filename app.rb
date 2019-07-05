@@ -4,7 +4,7 @@ class App < Sinatra::Base
   get '/newteam' do
      erb :newteam
    end
- 
+
   post '/team' do
     @team_name = params["name"]
     @coach = params["coach"]
@@ -13,7 +13,7 @@ class App < Sinatra::Base
     @power_forward = params["pf"]
     @small_forward = params["sf"]
     @center = params["c"]
-    erb :team 
-  end 
+    erb :team
+  end
 
 end
